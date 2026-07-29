@@ -1,174 +1,186 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "cURL to Fetch Converter",
+  title: "cURL to Fetch Converter — Convert curl Commands to JavaScript fetch()",
+  description:
+    "Instantly convert any cURL command to clean JavaScript fetch() or TypeScript code. Supports headers, methods, bodies, auth, form data, and more — 100% client-side.",
+  url: "https://curl-to-fetch-converter.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "Terminal",
+  brandAccentColor: "#6366f1",
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "curl to fetch converter",
+    "curl to javascript",
+    "curl to fetch",
+    "convert curl command",
+    "curl to typescript",
+    "curl command parser",
+    "fetch api converter",
+    "curl to node fetch",
+    "api request converter",
+    "developer tools",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6",
 
   // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
-  // Social Profiles (for Organization schema sameAs)
-  socialProfiles: [
-    "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
-  ],
+  // Social Profiles
+  socialProfiles: ["https://twitter.com/jagodana"],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/curl-to-fetch-converter",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "Free online tool to convert cURL commands to JavaScript fetch() API calls. Perfect for web developers integrating API docs into their projects.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Paste & convert instantly",
+      "JavaScript & TypeScript output",
+      "Supports all common curl flags",
+      "100% client-side, no data sent",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free Developer Tool",
+    titleLine1: "Convert cURL to",
+    titleGradient: "JavaScript Fetch",
+    subtitle:
+      "Paste any cURL command and get clean, ready-to-use JavaScript fetch() or TypeScript code in seconds. Supports headers, methods, request bodies, basic auth, form data, and more.",
   },
 
-  // Feature Cards (shown on homepage)
+  // Feature Cards
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "⚡",
+      title: "Instant Conversion",
+      description:
+        "Paste your curl command and get clean fetch() code instantly — no button click needed.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "🧩",
+      title: "Full Flag Support",
+      description:
+        "Handles -X, -H, -d, -u, -F, --data-raw, --user-agent, --compressed and all common curl flags.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "🔒",
+      title: "100% Private",
+      description:
+        "Everything runs in your browser. Your API keys and request data never leave your machine.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
+  // Related Tools
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📋",
+      description: "Format and validate JSON with syntax highlighting.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
-      icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      name: "Base64 Encoder",
+      url: "https://base64-encoder.tools.jagodana.com",
+      icon: "🔢",
+      description: "Encode and decode Base64 strings instantly.",
+    },
+    {
+      name: "JWT Decoder",
+      url: "https://jwt-decoder.tools.jagodana.com",
+      icon: "🔑",
+      description: "Decode and inspect JWT tokens securely in your browser.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
       description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "Timestamp Converter",
+      url: "https://unix-timestamp-converter.tools.jagodana.com",
+      icon: "🕐",
+      description: "Convert Unix timestamps to human-readable dates.",
     },
     {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
-    },
-    {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "URL Encoder",
+      url: "https://url-encoder.tools.jagodana.com",
+      icon: "🔗",
+      description: "Encode and decode URL components safely.",
     },
   ],
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
+  // HowTo Steps
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste Your curl Command",
+      text: "Copy any curl command from API docs, Postman, or your terminal and paste it into the input box.",
+      url: "",
+    },
+    {
+      name: "Choose Output Language",
+      text: "Select JavaScript or TypeScript as your target output format.",
+      url: "",
+    },
+    {
+      name: "Copy the Generated Code",
+      text: "Click 'Copy Code' to copy the generated fetch() snippet and paste it directly into your project.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT30S",
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
+  // FAQ
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What curl flags does this tool support?",
+      answer:
+        "The converter supports all common curl flags including: -X / --request (HTTP method), -H / --header (headers), -d / --data / --data-raw / --data-binary (request body), -u / --user (basic auth), -F / --form (multipart form data), -A / --user-agent (User-Agent), -e / --referer (Referer), --compressed (Accept-Encoding), -L / --location (follow redirects note), and -b / --cookie (cookies).",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Does this tool support TypeScript output?",
+      answer:
+        "Yes! Toggle to TypeScript mode to get output with proper type annotations, including typed RequestInit options.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Is my data safe? Does it get sent to a server?",
+      answer:
+        "Completely safe. The entire conversion happens in your browser using JavaScript — no data is ever sent to any server. Your API keys, tokens, and request bodies remain entirely private.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "What should I do with the generated fetch() code?",
+      answer:
+        "Paste it directly into any JavaScript or TypeScript project. It works in modern browsers, Node.js (v18+), and any environment that supports the native fetch() API. For older Node.js versions, you may need to import 'node-fetch'.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
+  // ====== PAGES ======
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title:
+        "cURL to Fetch Converter — Convert curl Commands to JavaScript fetch()",
+      description:
+        "Instantly convert any cURL command to clean JavaScript fetch() or TypeScript code. Supports headers, methods, bodies, auth, form data, and more — 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
