@@ -1,7 +1,7 @@
 {
-  "name": "{{TOOL_NAME}}",
-  "short_name": "{{TOOL_SHORT_NAME}}",
-  "description": "{{TOOL_DESCRIPTION}}",
+  "name": "CSS Specificity Calculator",
+  "short_name": "Specificity",
+  "description": "Calculate and compare CSS selector specificity scores visually",
   "icons": [
     {
       "src": "/favicon.svg",
@@ -22,7 +22,7 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "{{BRAND_COLOR}}",
+  "theme_color": "#7c3aed",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",
