@@ -1,27 +1,30 @@
 export const siteConfig = {
-  // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "JSON to TypeScript",
+  title: "JSON to TypeScript Converter — Instant Interface Generator",
+  description:
+    "Convert any JSON to TypeScript interfaces instantly. Paste JSON, get typed interfaces with nested types, arrays, and optional fields. 100% free, no login required.",
+  url: "https://json-to-typescript.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "Code2",
+  brandAccentColor: "#6366f1",
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "json to typescript",
+    "json to typescript interface",
+    "convert json to typescript",
+    "json typescript converter",
+    "json to ts",
+    "typescript interface generator",
+    "json to type alias",
+    "online typescript generator",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6",
 
   // Branding
   creator: "Jagodana",
@@ -31,144 +34,161 @@ export const siteConfig = {
   // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/json-to-typescript",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "JSON to TypeScript Converter — free, instant, and 100% client-side. Convert JSON objects to fully-typed TypeScript interfaces with nested types and arrays in one click.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Instant JSON to TypeScript conversion",
+      "Nested object & array support",
+      "Smart optional field detection",
+      "Copy to clipboard in one click",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free TypeScript Interface Generator",
+    titleLine1: "Convert JSON to",
+    titleGradient: "TypeScript Interfaces",
+    subtitle:
+      "Paste any JSON and get clean, typed TypeScript interfaces instantly. Handles nested objects, arrays, optional fields, and more — 100% in your browser.",
   },
 
-  // Feature Cards (shown on homepage)
+  // Feature Cards
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "⚡",
+      title: "Instant Conversion",
+      description:
+        "Paste JSON and get TypeScript interfaces in milliseconds, including deeply nested objects and arrays.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "🔁",
+      title: "Smart Type Inference",
+      description:
+        "Automatically detects strings, numbers, booleans, arrays, null, and nested objects to create accurate types.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "📋",
+      title: "One-Click Copy",
+      description:
+        "Copy generated TypeScript interfaces directly to your clipboard and paste straight into your codebase.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
+  // Related Tools
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📝",
+      description: "Format, validate, and beautify JSON data.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
+      name: "JSON to Zod",
+      url: "https://json-to-zod.tools.jagodana.com",
+      icon: "🛡️",
+      description: "Generate Zod validation schemas from JSON.",
+    },
+    {
+      name: "JSON Diff Viewer",
+      url: "https://json-diff-viewer.tools.jagodana.com",
       icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      description: "Compare two JSON objects and highlight differences.",
+    },
+    {
+      name: "XML Formatter",
+      url: "https://xml-formatter.tools.jagodana.com",
+      icon: "📄",
+      description: "Format and validate XML documents online.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
-      description: "Build, test & debug regular expressions in real-time.",
+      description: "Build, test and debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
-    },
-    {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
-    },
-    {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "Encoding Explorer",
+      url: "https://encoding-explorer.tools.jagodana.com",
+      icon: "🔐",
+      description: "Encode and decode strings in multiple formats.",
     },
   ],
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
+  // HowTo Steps
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste your JSON",
+      text: "Paste or type your JSON data into the input editor on the left side.",
+      url: "",
+    },
+    {
+      name: "Convert to TypeScript",
+      text: "Click the Convert button or wait for auto-conversion to instantly generate TypeScript interfaces.",
+      url: "",
+    },
+    {
+      name: "Copy the result",
+      text: "Click Copy to clipboard to copy the generated TypeScript interfaces and paste them into your project.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M",
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
+  // FAQ
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What is the JSON to TypeScript converter?",
+      answer:
+        "It is a free online tool that converts JSON data into TypeScript interface definitions instantly. You paste your JSON and the tool generates clean, typed TypeScript interfaces — all in your browser with no login or server upload required.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Does it handle nested objects?",
+      answer:
+        "Yes. Nested JSON objects generate separate named TypeScript interfaces with proper type references. For example, a nested 'address' object becomes an 'Address' interface and the parent interface references it by name.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can I convert JSON arrays to TypeScript?",
+      answer:
+        "Yes. Arrays are converted to typed arrays such as User[] or string[]. The element type is inferred from the items in the array. Mixed-type arrays produce a union type.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "Is my JSON data sent to a server?",
+      answer:
+        "No. All conversion happens 100% in your browser using JavaScript. Your JSON data never leaves your device and is never uploaded to any server.",
+    },
+    {
+      question: "Can I generate type aliases instead of interfaces?",
+      answer:
+        "Yes. Use the toggle in the tool to switch between 'interface' and 'type alias' output. Both are equivalent for object types in TypeScript.",
+    },
+    {
+      question: "What happens with null values in JSON?",
+      answer:
+        "Null values are typed as 'null' by default. You can enable the 'Optional fields' toggle to mark any nullable field as optional (fieldName?: Type | null) instead.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
+  // Pages (for sitemap + per-page SEO)
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title: "JSON to TypeScript Converter — Instant Interface Generator",
+      description:
+        "Convert any JSON to TypeScript interfaces instantly. Paste JSON, get typed interfaces with nested types, arrays, and optional fields. 100% free, no login required.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
