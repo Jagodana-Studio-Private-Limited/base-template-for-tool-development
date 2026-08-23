@@ -1,174 +1,185 @@
 export const siteConfig = {
-  // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "YAML to JSON Converter",
+  title: "YAML to JSON Converter — Bidirectional, Instant, 100% Free",
+  description:
+    "Convert YAML to JSON and JSON to YAML instantly in your browser. No upload, no signup, no server — 100% client-side. Validates, pretty-prints, and handles complex nested structures.",
+  url: "https://yaml-to-json-converter.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
-  // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "ArrowLeftRight",
+  brandAccentColor: "#6366f1",
 
-  // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "yaml to json",
+    "json to yaml",
+    "yaml converter",
+    "json converter",
+    "yaml parser",
+    "convert yaml",
+    "online yaml editor",
+    "yaml to json online",
+    "json to yaml online",
+    "yaml formatter",
+    "yaml validator",
+    "developer tools",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
-  // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6",
 
-  // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
-  // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
-  // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/yaml-to-json-converter",
     website: "https://jagodana.com",
   },
 
-  // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "Instantly convert between YAML and JSON in your browser. Validate, format, and copy — all client-side with zero data uploads.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "YAML → JSON conversion",
+      "JSON → YAML conversion",
+      "Syntax error detection",
+      "Pretty-print & minify",
     ],
   },
 
-  // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Instant YAML ↔ JSON",
+    titleLine1: "Convert YAML & JSON",
+    titleGradient: "in Seconds",
+    subtitle:
+      "Paste YAML and get JSON. Paste JSON and get YAML. Validates in real-time, runs entirely in your browser — no server, no sign-up, no data ever leaves your machine.",
   },
 
-  // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🔄",
+      title: "Bidirectional",
+      description:
+        "Convert YAML to JSON or JSON to YAML with a single click. Auto-detects the input format.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "✅",
+      title: "Live Validation",
+      description:
+        "Instant syntax error highlighting with clear messages so you can fix issues fast.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "🔒",
+      title: "100% Private",
+      description:
+        "All processing happens in your browser. Your data never touches a server.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📋",
+      description: "Format and validate JSON with syntax highlighting.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
+      name: "JSON Diff Viewer",
+      url: "https://json-diff-viewer.tools.jagodana.com",
       icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      description: "Compare two JSON objects and see the differences.",
+    },
+    {
+      name: "JSON to Zod",
+      url: "https://json-to-zod.tools.jagodana.com",
+      icon: "🛡️",
+      description: "Generate Zod schemas from any JSON structure.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
-      description: "Build, test & debug regular expressions in real-time.",
+      description: "Build, test and debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "Encoding Explorer",
+      url: "https://encoding-explorer.tools.jagodana.com",
+      icon: "🔤",
+      description: "Encode and decode Base64, URL, HTML entities and more.",
     },
     {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
-    },
-    {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "XML Formatter",
+      url: "https://xml-formatter.tools.jagodana.com",
+      icon: "📄",
+      description: "Format, validate and minify XML documents.",
     },
   ],
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste your YAML or JSON",
+      text: "Paste your YAML or JSON text into the left panel. The tool auto-detects the format.",
+      url: "",
+    },
+    {
+      name: "Click Convert",
+      text: "Click the Convert button or use the direction arrows to convert between YAML and JSON instantly.",
+      url: "",
+    },
+    {
+      name: "Copy the result",
+      text: "Click Copy to copy the output to your clipboard, or download it as a file.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT30S",
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "Is this YAML to JSON converter free?",
+      answer:
+        "Yes, completely free — no signup, no ads, no rate limits. All conversion happens in your browser so your data stays private.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Does it support all YAML features?",
+      answer:
+        "The converter supports YAML 1.2 including anchors, aliases, multi-line strings, nested structures, arrays, booleans, nulls, and numbers. Edge cases in YAML 1.1 (like implicit boolean values such as 'yes'/'no') are handled by the js-yaml library.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can I convert JSON back to YAML?",
+      answer:
+        "Yes — the tool is fully bidirectional. Paste JSON in the left panel and click the JSON→YAML direction button. The output will be formatted YAML with proper indentation.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "What happens to my data?",
+      answer:
+        "Nothing is sent to any server. Conversion runs entirely in JavaScript inside your browser tab. Your YAML and JSON data never leave your device.",
+    },
+    {
+      question: "Why is my YAML not converting?",
+      answer:
+        "The error panel shows exactly what went wrong. Common issues include incorrect indentation (YAML is indentation-sensitive), missing colons after keys, or mixing tabs and spaces. Use spaces only in YAML.",
+    },
+    {
+      question: "Can I pretty-print or minify the JSON output?",
+      answer:
+        "Yes — use the Pretty / Minify toggle above the output panel to switch between formatted JSON with 2-space indentation and compact single-line JSON.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title: "YAML to JSON Converter — Bidirectional, Instant, 100% Free",
+      description:
+        "Convert YAML to JSON and JSON to YAML instantly in your browser. No upload, no signup — 100% client-side YAML validator and converter.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 

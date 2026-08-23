@@ -1,7 +1,7 @@
 {
-  "name": "{{TOOL_NAME}}",
-  "short_name": "{{TOOL_SHORT_NAME}}",
-  "description": "{{TOOL_DESCRIPTION}}",
+  "name": "YAML to JSON Converter",
+  "short_name": "YAML↔JSON",
+  "description": "Convert YAML to JSON and JSON to YAML instantly in your browser. 100% free, 100% private.",
   "icons": [
     {
       "src": "/favicon.svg",
@@ -22,7 +22,7 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "{{BRAND_COLOR}}",
+  "theme_color": "#3b82f6",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",
