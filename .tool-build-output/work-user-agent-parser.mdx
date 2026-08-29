@@ -1,0 +1,76 @@
+---
+published: true
+title: User Agent Parser
+description: A free, browser-based User-Agent string decoder. Paste any UA string and instantly identify the browser, OS, device type, device vendor, and rendering engine — no data ever leaves your browser.
+image: /work/user-agent-parser.webp
+category: Developer Tools
+tags:
+  - User Agent
+  - Browser Detection
+  - Developer Tools
+  - HTTP
+  - Next.js
+  - TypeScript
+featured: true
+date: 2026-08-29
+liveUrl: https://user-agent-parser.tools.jagodana.com
+githubUrl: https://github.com/Jagodana-Studio-Private-Limited/user-agent-parser
+---
+
+# User Agent Parser — Decode Any UA String Instantly
+
+User Agent Parser is a free, browser-based tool that decodes any User-Agent string into structured fields: browser name and version, operating system, device type, rendering engine, and CPU architecture. Paste a UA string or auto-fill your current browser's UA with one click — no signup, no server requests, no data collection.
+
+## The Problem
+
+User-Agent strings are one of those HTTP fundamentals that everyone encounters but nobody memorises. The raw string looks like this:
+
+```
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+```
+
+Parsing that by eye wastes time. Is this Chrome or Edge? Is it really Windows 10 or could it be Windows 11? What rendering engine is it using? For support tickets, analytics debugging, bot detection, and HTTP client identification, you need answers fast.
+
+## How It Works
+
+### 1. Paste or Auto-Fill
+
+Paste any UA string into the input field, or click **Use My Browser UA** to auto-fill with the current browser's `navigator.userAgent`. The tool handles browsers, mobile clients, crawlers, HTTP libraries, and command-line tools.
+
+### 2. One-Click Parsing
+
+Hit **Parse UA** and the tool runs a series of pattern-matching passes over the string — browser detection first (Edge, Opera, Samsung, Firefox, Chrome, Safari, IE), then engine, OS, device, and CPU architecture.
+
+### 3. Structured Results
+
+Results appear in four cards:
+
+- **Browser** — Name, full version string, and major version number
+- **Operating System** — Name and version (Windows NT version numbers mapped to human-readable names: NT 10.0 → Windows 10/11)
+- **Engine** — Blink, Gecko, WebKit, Trident, or Presto with version
+- **Device** — Type (Desktop, Mobile, Tablet, Bot/Crawler, HTTP Client), vendor, model, and CPU architecture
+
+### 4. Per-Field Copy and JSON Export
+
+Every result field has a copy button. The **Copy as JSON** button exports the entire parsed result as a clean JSON object, ready to paste into code, logs, or bug reports.
+
+## Detection Coverage
+
+The parser handles:
+
+- **Browsers:** Edge, Opera, Samsung Browser, UC Browser, Yandex, Vivaldi, Brave, DuckDuckGo, Firefox, Firefox iOS, Chrome iOS, Chrome, Safari, Internet Explorer (MSIE and Trident/rv: variants)
+- **Crawlers:** Googlebot, Bingbot
+- **HTTP clients:** curl, Python Requests, Postman, Axios
+- **Operating systems:** Windows (with NT-to-marketing-name mapping), iOS, iPadOS, Android, macOS, Chrome OS, Linux, FreeBSD
+- **Devices:** Apple (iPhone, iPad, iPod), Samsung (SM-* model detection), Google Pixel and Nexus, Huawei, OnePlus, Xiaomi/Redmi, OPPO, Vivo
+- **CPU architectures:** arm64/aarch64, arm, amd64/x86_64/WOW64, ia32, mips
+- **Engines:** Blink (Chrome without Edge), Gecko (Firefox), WebKit (Safari), Trident (IE), Presto (old Opera)
+
+## Key Features
+
+- **Instant parsing** — results appear as soon as you click Parse; no round trips
+- **100% client-side** — UA strings are never sent to a server; all processing runs in the browser
+- **Copy as JSON** — export the structured result for use in logs, code, or reports
+- **Six example UAs** — Chrome/Windows, Firefox/macOS, Safari/iPhone, Edge/Windows, Googlebot, Samsung Chrome — load any with one click
+- **Auto-fill** — click "Use My Browser UA" to test your own client immediately
+- **Mobile-first layout** — works on phones, tablets, and desktops
