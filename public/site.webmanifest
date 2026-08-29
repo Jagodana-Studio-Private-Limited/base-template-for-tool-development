@@ -1,7 +1,7 @@
 {
-  "name": "{{TOOL_NAME}}",
-  "short_name": "{{TOOL_SHORT_NAME}}",
-  "description": "{{TOOL_DESCRIPTION}}",
+  "name": "User Agent Parser",
+  "short_name": "UA Parser",
+  "description": "Parse any User-Agent string to identify browser, OS, device type, and engine. 100% client-side.",
   "icons": [
     {
       "src": "/favicon.svg",
@@ -22,7 +22,7 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "{{BRAND_COLOR}}",
+  "theme_color": "#0284c7",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",

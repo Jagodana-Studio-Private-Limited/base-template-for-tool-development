@@ -1,0 +1,162 @@
+---
+title: "Introducing User Agent Parser: Decode Any UA String Instantly"
+description: "A free, browser-based tool that decodes any User-Agent string into browser, OS, device type, engine, and CPU architecture. Paste any UA — results in milliseconds. 100% client-side."
+date: "2026-08-29"
+published: true
+author: "Jagodana Team"
+tags: ["User Agent", "Browser Detection", "Developer Tools", "HTTP", "Free Tools", "Build In Public"]
+image: "/work/user-agent-parser.webp"
+---
+
+# Introducing User Agent Parser: Decode Any UA String Instantly
+
+We built a free User-Agent string decoder. Paste any UA string and get a structured breakdown — browser name and version, operating system, device type, rendering engine, and CPU architecture — in milliseconds. No login. No server. 100% in your browser.
+
+**→ [user-agent-parser.tools.jagodana.com](https://user-agent-parser.tools.jagodana.com)**
+
+---
+
+## What Is a User-Agent String?
+
+A User-Agent (UA) string is sent by every browser and HTTP client in the `User-Agent` request header. It identifies the application, operating system, and device making the request. Web servers use it to tailor responses; developers use it for analytics, debugging, and bot detection.
+
+A typical Chrome UA looks like this:
+
+```
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+```
+
+Parsing that by eye takes time. What Chrome version is that exactly? Is the OS Windows 10 or Windows 11? The Windows NT version number (10.0) doesn't tell you directly. Is the engine Blink or WebKit? (It's Blink — Chrome switched from WebKit in 2013, but the AppleWebKit token is still in the string for compatibility.)
+
+A parser gives you the answers instantly.
+
+---
+
+## Why Does This Tool Exist?
+
+User-Agent parsing comes up constantly in developer work:
+
+**Support tickets:** A user reports a bug. You need to know what browser and OS they are on before you can reproduce it. They paste their UA string. You need to decode it fast.
+
+**Analytics debugging:** Your analytics platform shows unexpected traffic from an unknown client. Is it a bot, a crawler, or a legitimate mobile browser? The UA string tells you.
+
+**HTTP client identification:** Your API logs show requests from `python-requests/2.31.0` or `curl/7.88.1`. A parser tells you instantly what kind of client is hitting your endpoint.
+
+**Bot detection:** Googlebot, Bingbot, and other crawlers identify themselves via UA. A quick parse separates legitimate crawlers from suspicious requests.
+
+**Cross-browser QA:** Your test matrix includes specific browser/OS combinations. Verifying a captured UA against the expected client takes seconds with a parser.
+
+---
+
+## How Does the User Agent Parser Work?
+
+### What pattern does it use to detect the browser?
+
+The parser runs a priority-ordered list of regex patterns against the UA string. Order matters: Edge must be checked before Chrome (because Edge UAs contain the Chrome token), and Opera must be checked before Chrome (same reason). The patterns are:
+
+1. Edge (`Edg/`)
+2. Opera (`OPR/`)
+3. Samsung Browser (`SamsungBrowser/`)
+4. UC Browser, Yandex, Vivaldi, Brave, DuckDuckGo
+5. Firefox, Firefox iOS (`FxiOS/`), Chrome iOS (`CriOS/`)
+6. Chrome, Safari
+7. Internet Explorer (`MSIE` and `Trident/.*rv:` for IE11)
+8. Crawlers: Googlebot, Bingbot
+9. HTTP clients: curl, Python Requests, Postman, Axios
+
+Each match extracts the version string and parses out the major version number.
+
+### How does it handle the Blink vs. WebKit distinction?
+
+Chrome-based browsers (Chrome, Edge, Samsung Browser, Brave) still include `AppleWebKit/537.36` in their UA string for compatibility with servers that check for WebKit. The parser detects this case: if the UA contains `AppleWebKit` and `Chrome` but not `Edg`, the engine is reported as **Blink**, not WebKit. Blink is the fork of WebKit that Google created in 2013.
+
+### How does it decode Windows NT version numbers?
+
+The Windows version in a UA string is expressed as an NT kernel version, not a marketing name. The parser maps these:
+
+| NT version | Windows name |
+|-----------|-------------|
+| 10.0 | Windows 10/11 |
+| 6.3 | Windows 8.1 |
+| 6.2 | Windows 8 |
+| 6.1 | Windows 7 |
+| 6.0 | Windows Vista |
+| 5.1 | Windows XP |
+
+Windows 10 and 11 share NT 10.0 — UA strings don't distinguish between them.
+
+### What device types does it detect?
+
+- **Desktop** — default for Windows, macOS, Linux UAs without mobile indicators
+- **Mobile** — iPhone, iPod, Android Mobile, and vendor-specific phones (Samsung SM-*, Google Pixel/Nexus, Huawei, OnePlus, Xiaomi, Redmi, OPPO, Vivo)
+- **Tablet** — iPad, Android without the Mobile token
+- **Bot/Crawler** — Googlebot, Bingbot, and other crawlers detected by pattern
+- **HTTP Client** — curl, Python Requests, Postman, Axios, HTTPie
+
+### Is my UA string sent to a server?
+
+No. All parsing runs in your browser using JavaScript regex patterns. The UA string you paste never leaves your device. There are no API calls, no logging, and no analytics on the parsed content.
+
+---
+
+## What Can You Do With the Results?
+
+### Copy individual fields
+
+Every result field — browser name, version, OS, device type — has its own copy button. Click once to copy that value directly to your clipboard. Useful when you need just one piece of information for a bug report or log entry.
+
+### Export as JSON
+
+The **Copy as JSON** button exports the full parsed result as a clean JSON object:
+
+```json
+{
+  "browser": {
+    "name": "Chrome",
+    "version": "120.0.0.0",
+    "major": "120"
+  },
+  "engine": {
+    "name": "Blink",
+    "version": "537.36"
+  },
+  "os": {
+    "name": "Windows",
+    "version": "10/11"
+  },
+  "device": {
+    "type": "Desktop",
+    "vendor": "",
+    "model": ""
+  },
+  "cpu": {
+    "architecture": "amd64"
+  }
+}
+```
+
+Paste it directly into a bug report, Slack message, or code comment.
+
+### Test with examples
+
+Six example UA strings are available as one-click chips: Chrome on Windows, Firefox on macOS, Safari on iPhone, Edge on Windows, Googlebot, and Samsung Chrome on Android. Load any to see how the parser handles it before pasting your own.
+
+---
+
+## Who Is This For?
+
+**Frontend and backend developers** debugging cross-browser issues and reading server logs.
+
+**QA engineers** verifying that test environments match expected browser/OS combinations.
+
+**DevOps and platform engineers** identifying unexpected clients in API access logs.
+
+**Product managers** and **support teams** decoding UA strings from user reports.
+
+**Security engineers** checking whether a request came from a real browser, a crawler, or a suspicious automation client.
+
+---
+
+## Try It
+
+Paste any UA string at **[user-agent-parser.tools.jagodana.com](https://user-agent-parser.tools.jagodana.com)** — or click "Use My Browser UA" to decode your own client in one click. Free, no account, 100% private.
