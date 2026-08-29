@@ -1,174 +1,178 @@
 export const siteConfig = {
-  // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "User Agent Parser",
+  title: "User Agent Parser — Decode Any UA String Instantly",
+  description:
+    "Parse any User-Agent string to identify browser name, version, OS, device type, and rendering engine. Paste a UA string or use your own — 100% client-side.",
+  url: "https://user-agent-parser.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
-  // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "MonitorSmartphone",
+  brandAccentColor: "#0ea5e9",
 
-  // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "user agent parser",
+    "parse user agent string",
+    "user agent decoder",
+    "browser detection tool",
+    "ua string parser",
+    "user agent analyzer",
+    "browser version detector",
+    "OS detection from user agent",
+    "device type detector",
+    "online user agent parser",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
-  // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#0284c7",
 
-  // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
-  // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
-  // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/user-agent-parser",
     website: "https://jagodana.com",
   },
 
-  // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "A free, browser-based User-Agent parser. Instantly identify any UA string's browser, OS, device, and engine — no data ever leaves your device.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Parse any UA string instantly",
+      "Detect browser, OS, device & engine",
+      "Auto-fill your current browser's UA",
+      "Copy results as JSON",
     ],
   },
 
-  // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "100% Client-Side & Private",
+    titleLine1: "Decode Any",
+    titleGradient: "User-Agent String",
+    subtitle:
+      "Instantly identify the browser, operating system, device type, and rendering engine behind any User-Agent string. Paste any UA or analyse your own in one click.",
   },
 
-  // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🔍",
+      title: "Instant Parsing",
+      description:
+        "Paste any UA string and see a fully-structured breakdown of browser, OS, device type, and engine in milliseconds.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "🛡️",
+      title: "100% Private",
+      description:
+        "All parsing happens in your browser — no UA strings are ever sent to a server. Your data never leaves your device.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "📋",
+      title: "Copy as JSON",
+      description:
+        "Export the parsed result as a clean JSON object to paste directly into code, logs, or bug reports.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "HTTP Status Debugger",
+      url: "https://http-status-debugger.tools.jagodana.com",
+      icon: "🌐",
+      description: "Look up every HTTP status code with examples.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
-      icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      name: "Encoding Explorer",
+      url: "https://encoding-explorer.tools.jagodana.com",
+      icon: "🔐",
+      description: "Encode & decode Base64, URL, HTML entities and more.",
+    },
+    {
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📄",
+      description: "Format, validate and minify JSON online.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
       description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "OG Preview",
+      url: "https://og-preview.tools.jagodana.com",
+      icon: "🖼️",
+      description: "Preview how your URL looks when shared on social media.",
     },
     {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
-    },
-    {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "CORS Headers Generator",
+      url: "https://cors-headers-generator.tools.jagodana.com",
+      icon: "🔗",
+      description: "Generate correct CORS headers for any framework.",
     },
   ],
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste or auto-fill a UA string",
+      text: "Click 'Use My Browser UA' to load your own User-Agent, or paste any UA string into the input field.",
+      url: "",
+    },
+    {
+      name: "Click Parse",
+      text: "Hit the Parse button to instantly decode the UA string into browser, OS, device type, and engine fields.",
+      url: "",
+    },
+    {
+      name: "Copy or share the result",
+      text: "Copy the structured result as JSON, or share individual fields directly from the results panel.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT30S",
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What is a User-Agent string?",
+      answer:
+        "A User-Agent (UA) string is a text field sent by a browser or HTTP client in the request header. It identifies the application, operating system, vendor, and version making the request. Web servers use it to tailor responses, and developers use it for browser detection and analytics.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Is my User-Agent data sent to a server?",
+      answer:
+        "No. All parsing happens entirely in your browser using JavaScript. Your UA string never leaves your device — there are no server requests, no logging, and no tracking.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can I parse mobile or bot User-Agent strings?",
+      answer:
+        "Yes. The parser handles browser UAs (Chrome, Firefox, Safari, Edge), mobile UAs (iOS, Android), desktop OS UAs, headless browsers, and common crawler or bot strings like Googlebot.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "What information does the parser extract?",
+      answer:
+        "The parser extracts: browser name and version, operating system name and version, device type (desktop, mobile, tablet), device vendor and model where available, and the rendering engine (Blink, Gecko, WebKit, etc.).",
+    },
+    {
+      question: "How do I find my own User-Agent string?",
+      answer:
+        "Click the 'Use My Browser UA' button — it auto-fills the input with your browser's current User-Agent from navigator.userAgent. You can also find it in browser dev tools under Network → request headers.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title: "User Agent Parser — Decode Any UA String Instantly",
+      description:
+        "Parse any User-Agent string to identify browser name, version, OS, device type, and rendering engine. 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
