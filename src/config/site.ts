@@ -1,37 +1,27 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "YAML Formatter",
-  title: "YAML Formatter & Validator — Free Online Tool",
-  description:
-    "Format, validate, and minify YAML instantly in your browser. Paste your YAML and get perfectly indented, validated output with detailed error reporting. 100% client-side, no uploads.",
-  url: "https://yaml-formatter.tools.jagodana.com",
+  name: "{{TOOL_NAME}}",
+  title: "{{TOOL_TITLE}}",
+  description: "{{TOOL_DESCRIPTION}}",
+  url: "https://{{TOOL_SLUG}}.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "FileCode2", // lucide-react icon name
-  brandAccentColor: "#10b981", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
+  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
+  // Use text-brand, from-brand, to-brand-accent etc. in components
+  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
 
   // SEO
   keywords: [
-    "yaml formatter",
-    "yaml validator",
-    "yaml beautifier",
-    "yaml minifier",
-    "yaml linter",
-    "format yaml online",
-    "validate yaml online",
-    "yaml parser",
-    "yaml checker",
-    "online yaml tool",
-    "yaml pretty print",
-    "yaml syntax checker",
-    "kubernetes yaml formatter",
-    "docker compose yaml formatter",
+    "{{KEYWORD_1}}",
+    "{{KEYWORD_2}}",
+    "{{KEYWORD_3}}",
   ],
-  applicationCategory: "DeveloperApplication",
+  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
 
   // Theme
-  themeColor: "#0d9488",
+  themeColor: "#10b981", // used in manifest and meta tags
 
   // Branding
   creator: "Jagodana",
@@ -41,161 +31,144 @@ export const siteConfig = {
   // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
+    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/yaml-formatter",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about:
-      "YAML Formatter is a free browser-based tool that formats, validates, and minifies YAML files instantly — no uploads, no accounts, 100% private.",
+    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
     featuresTitle: "Features",
     features: [
-      "Format & prettify YAML",
-      "Validate YAML syntax",
-      "Minify YAML output",
-      "Detailed error reporting",
+      "{{FEATURE_1}}",
+      "{{FEATURE_2}}",
+      "{{FEATURE_3}}",
+      "{{FEATURE_4}}",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "Free YAML Tool",
-    titleLine1: "Format & Validate",
-    titleGradient: "YAML Instantly",
-    subtitle:
-      "Paste any YAML — Kubernetes configs, Docker Compose, CI/CD pipelines — and get perfectly formatted, validated output in one click. 100% client-side, nothing leaves your browser.",
+    badge: "{{HERO_BADGE_TEXT}}",
+    titleLine1: "{{HERO_TITLE_LINE_1}}",
+    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
+    subtitle: "{{HERO_SUBTITLE}}",
   },
 
   // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "✨",
-      title: "Format & Prettify",
-      description:
-        "Instantly reformat messy YAML with consistent 2-space indentation and proper structure.",
+      icon: "{{FEATURE_ICON_1}}",
+      title: "{{FEATURE_CARD_TITLE_1}}",
+      description: "{{FEATURE_CARD_DESC_1}}",
     },
     {
-      icon: "✅",
-      title: "Validate Syntax",
-      description:
-        "Catch YAML errors before they break your CI/CD pipeline — with precise line and column numbers.",
+      icon: "{{FEATURE_ICON_2}}",
+      title: "{{FEATURE_CARD_TITLE_2}}",
+      description: "{{FEATURE_CARD_DESC_2}}",
     },
     {
-      icon: "🔒",
-      title: "100% Private",
-      description:
-        "Everything runs in your browser. Your YAML configs never leave your machine.",
+      icon: "{{FEATURE_ICON_3}}",
+      title: "{{FEATURE_CARD_TITLE_3}}",
+      description: "{{FEATURE_CARD_DESC_3}}",
     },
   ],
 
   // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
     {
-      name: "JSON Formatter",
-      url: "https://json-formatter.tools.jagodana.com",
-      icon: "📋",
-      description: "Format, validate, and minify JSON with syntax highlighting.",
+      name: "Favicon Generator",
+      url: "https://favicon-generator.jagodana.com",
+      icon: "🎨",
+      description: "Generate all favicon sizes + manifest from any image.",
     },
     {
-      name: "XML Formatter",
-      url: "https://xml-formatter.tools.jagodana.com",
-      icon: "📄",
-      description: "Format and validate XML documents instantly.",
+      name: "Sitemap Checker",
+      url: "https://sitemap-checker.jagodana.com",
+      icon: "🔍",
+      description: "Discover and validate sitemaps on any website.",
     },
     {
-      name: "CORS Headers Generator",
-      url: "https://cors-headers-generator.tools.jagodana.com",
-      icon: "🌐",
-      description: "Generate CORS configurations for Express, Nginx, Apache & more.",
-    },
-    {
-      name: "JWT Debugger",
-      url: "https://jwt-debugger.tools.jagodana.com",
-      icon: "🔑",
-      description: "Decode and inspect JSON Web Tokens instantly.",
-    },
-    {
-      name: "Regex Pattern Tester",
-      url: "https://regex-pattern-tester.tools.jagodana.com",
+      name: "Regex Playground",
+      url: "https://regex-playground.jagodana.com",
       icon: "🧪",
-      description: "Build, test and debug regular expressions in real-time.",
+      description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "CSV to JSON",
-      url: "https://csv-to-json.tools.jagodana.com",
-      icon: "🔄",
-      description: "Convert CSV data to JSON format instantly.",
+      name: "Screenshot Beautifier",
+      url: "https://screenshot-beautifier.jagodana.com",
+      icon: "📸",
+      description: "Transform screenshots into beautiful images.",
+    },
+    {
+      name: "Color Palette Explorer",
+      url: "https://color-palette-explorer.jagodana.com",
+      icon: "🎭",
+      description: "Extract color palettes from any image.",
+    },
+    {
+      name: "Logo Maker",
+      url: "https://logo-maker.jagodana.com",
+      icon: "✏️",
+      description: "Create a professional logo in 60 seconds.",
     },
   ],
 
   // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    {
-      name: "Paste your YAML",
-      text: "Paste or type your YAML content into the input editor on the left.",
-      url: "",
-    },
-    {
-      name: "Click Format or Validate",
-      text: 'Click "Format YAML" to prettify and validate, or "Minify" to compress the output.',
-      url: "",
-    },
-    {
-      name: "Copy the result",
-      text: 'Click "Copy" to copy the formatted output to your clipboard.',
-      url: "",
-    },
+    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
+    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
+    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
   ],
-  howToTotalTime: "PT1M",
+  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
 
   // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "Is this YAML formatter free to use?",
-      answer:
-        "Yes, completely free — no account, no signup, no rate limits. All processing happens in your browser using the js-yaml library.",
+      question: "{{FAQ_QUESTION_1}}",
+      answer: "{{FAQ_ANSWER_1}}",
     },
     {
-      question: "Does my YAML get uploaded to a server?",
-      answer:
-        "No. Everything runs 100% client-side in your browser. Your YAML configuration files never leave your device, making it safe to use with sensitive Kubernetes secrets, Docker Compose files, or CI/CD configs.",
+      question: "{{FAQ_QUESTION_2}}",
+      answer: "{{FAQ_ANSWER_2}}",
     },
     {
-      question: "What YAML versions does this support?",
-      answer:
-        "This tool supports YAML 1.2 (the latest standard), which is the version used by Kubernetes, Helm, GitHub Actions, CircleCI, Docker Compose, and most modern DevOps tooling.",
+      question: "{{FAQ_QUESTION_3}}",
+      answer: "{{FAQ_ANSWER_3}}",
     },
     {
-      question: "Why does my YAML validation fail?",
-      answer:
-        "Common causes include: tabs instead of spaces (YAML requires spaces), inconsistent indentation, unquoted special characters like colons or brackets, or unclosed brackets/braces. The error message shows the exact line and column to help you fix it.",
-    },
-    {
-      question: "Can I use this to format Kubernetes manifests?",
-      answer:
-        "Yes! This formatter works perfectly with Kubernetes YAML manifests, Helm chart values files, Docker Compose files, GitHub Actions workflows, and any other YAML-based configuration format.",
-    },
-    {
-      question: "What is YAML minification used for?",
-      answer:
-        "YAML minification removes comments and unnecessary whitespace to reduce file size. It's useful when embedding YAML as a string in other files or when minimizing config payload size in API calls.",
+      question: "{{FAQ_QUESTION_4}}",
+      answer: "{{FAQ_ANSWER_4}}",
     },
   ],
 
   // ====== PAGES (for sitemap + per-page SEO) ======
+  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "YAML Formatter & Validator — Free Online Tool",
-      description:
-        "Format, validate, and minify YAML instantly in your browser. Paste your YAML and get perfectly indented, validated output with detailed error reporting. 100% client-side, no uploads.",
+      title: "{{TOOL_TITLE}}",
+      description: "{{TOOL_DESCRIPTION}}",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
+    // Example page (DELETE when starting your tool, or customize)
+    "/about": {
+      title: "About - {{TOOL_NAME}}",
+      description: "Learn more about {{TOOL_NAME}} and how it works.",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    // "/blog": {
+    //   title: "Blog - {{TOOL_NAME}}",
+    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
+    //   changeFrequency: "weekly" as const,
+    //   priority: 0.8,
+    // },
   },
 } as const;
 
