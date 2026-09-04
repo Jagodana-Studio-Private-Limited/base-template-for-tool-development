@@ -1,7 +1,7 @@
 {
-  "name": "{{TOOL_NAME}}",
-  "short_name": "{{TOOL_SHORT_NAME}}",
-  "description": "{{TOOL_DESCRIPTION}}",
+  "name": "YAML Formatter & Validator",
+  "short_name": "YAML Formatter",
+  "description": "Format, validate, and minify YAML instantly in your browser. 100% client-side.",
   "icons": [
     {
       "src": "/favicon.svg",
@@ -22,7 +22,7 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "{{BRAND_COLOR}}",
+  "theme_color": "#0d9488",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",
